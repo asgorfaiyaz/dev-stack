@@ -1,4 +1,5 @@
 import { FiCheck } from "react-icons/fi";
+import { toast } from "react-toastify";
 
 interface TechCardProps {
   tech: {
@@ -50,7 +51,10 @@ function TechCard({ tech, addToStack, isAdded }: TechCardProps) {
       </div>
 
       <button
-        onClick={() => addToStack(tech.id)}
+        onClick={() => {
+          addToStack(tech.id);
+          toast.success(`${tech.name} added to your stack!`);
+        }}
         className={`mt-5 w-full py-2.5 px-4 text-sm font-medium rounded-xl transition flex items-center justify-center gap-2 cursor-pointer ${
           isAdded
             ? "bg-[#D61E7F] text-white opacity-90"

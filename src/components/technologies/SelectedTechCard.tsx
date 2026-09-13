@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 interface SelectedTechCardProps {
   tech: {
     id: string;
@@ -17,7 +19,14 @@ function SelectedTechCard({ tech, RemoveFromStack }: SelectedTechCardProps) {
           <div className="">{tech.category}</div>
         </div>
       </div>
-      <button onClick={() => RemoveFromStack(tech.id)}>X</button>
+      <button
+        onClick={() => {
+          RemoveFromStack(tech.id);
+          toast.info(`${tech.name} removed from your stack!`);
+        }}
+      >
+        X
+      </button>
     </div>
   );
 }

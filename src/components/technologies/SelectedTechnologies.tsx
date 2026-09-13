@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import SelectedTechCard from "./SelectedTechCard";
 
 function SelectedTechnologies({
@@ -39,7 +40,10 @@ function SelectedTechnologies({
           </div>
 
           <button
-            onClick={RemoveAllFromStack}
+            onClick={() => {
+              RemoveAllFromStack();
+              toast.info(`All technologies removed from your stack!`);
+            }}
             className="mt-20 w-full rounded-xl border border-[#D82C20] py-3 text-lg font-semibold text-red-500 hover:bg-red-50"
           >
             Remove All
