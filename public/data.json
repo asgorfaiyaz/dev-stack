@@ -50,16 +50,6 @@
     "badge": "Full Stack"
   },
   {
-    "id": "nuxt",
-    "name": "Nuxt",
-    "category": "Frontend",
-    "description": "A full-stack Vue framework for creating performant and production-ready web applications.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Nuxt.js.svg",
-    "rating": 4.7,
-    "difficulty": "Intermediate",
-    "badge": "Modern"
-  },
-  {
     "id": "astro",
     "name": "Astro",
     "category": "Frontend",

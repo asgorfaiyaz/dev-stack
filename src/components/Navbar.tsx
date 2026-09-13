@@ -35,7 +35,7 @@ function Navbar() {
             <button className="btn btn-sm sm:btn-md btn-ghost text-[9px] sm:text-[14px]">
               Sign in
             </button>
-            <button className="btn btn-sm sm:btn-md btn-primary text-[9px] sm:text-[14px] rounded-4xl text-white font-semibold">
+            <button className="btn btn-sm sm:btn-md btn-primary bg-primary text-[9px] sm:text-[14px] rounded-4xl text-white font-semibold">
               Sign Up
             </button>
           </div>

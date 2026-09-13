@@ -2,6 +2,7 @@ import { use, useState } from "react";
 import SelectedTechnologies from "./SelectedTechnologies";
 import TechCard from "./TechCard";
 import type { ITechnology } from "../../types";
+import { toast } from "react-toastify";
 
 function Technologies({
   technologiesPromise,
@@ -34,13 +35,28 @@ function Technologies({
                   tech={e}
                   isAdded={selectedTechnologies.some((c) => c.id === e.id)}
                   addToStack={(id: string) => {
-                    setSelectedTechnologies((prev) => {
-                      const clickedEle = technologies.filter(
-                        (e) => e.id === id,
-                      )[0];
-                      return [...prev, clickedEle];
-                    });
-                    console.log(selectedTechnologies);
+                    const technology = technologies.find(
+                      (tech) => tech.id === id,
+                    );
+
+                    if (!technology) return;
+
+                    // Check duplicate
+                    const alreadyAdded = selectedTechnologies.some(
+                      (tech) => tech.id === id,
+                    );
+
+                    if (alreadyAdded) {
+                      toast.warning(
+                        `${technology.name} is already in your stack!`,
+                      );
+                      return;
+                    }
+
+                    // Add technology
+                    setSelectedTechnologies((prev) => [...prev, technology]);
+
+                    toast.success(`${technology.name} added to your stack!`);
                   }}
                 />
               </div>
