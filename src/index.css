@@ -1,5 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import "tailwindcss";
-
 @plugin "daisyui" {
   themes:
     light --default,
@@ -9,7 +9,29 @@
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
-  --color-primary: black;
+  --color-primary: #d91b7e;
+  --color-secondary: #0a0f1d;
+}
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+}
+:root {
+  --brand-gradient: linear-gradient(90deg, #ff5722, #d81b7e, #7c3aed);
 }
 
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+body {
+  font-family: var(--font-inter);
+}
+
+@utility bg-brand-gradient {
+  background: var(--brand-gradient);
+}
+@utility text-brand-gradient {
+  background: var(--brand-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
