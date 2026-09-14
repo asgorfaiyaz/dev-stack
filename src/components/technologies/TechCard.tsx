@@ -26,13 +26,13 @@ function TechCard({ tech, addToStack, isAdded }: TechCardProps) {
               className="w-8 h-8 object-contain"
             />
           </div>
-          <span className="text-xs px-2.5 py-0.5 rounded-full bg-[#fbe8f2] text-[#D73387] font-medium">
+          <span className="text-xs px-2.5 py-0.5 rounded-full bg-[#fbe8f2] text-secondary font-medium">
             {tech.badge}
           </span>
         </div>
 
-        <h3 className="text-lg font-bold text-neutral-900 mt-3">{tech.name}</h3>
-        <p className="text-xs text-neutral-500 mt-1.5 leading-relaxed line-clamp-2">
+        <h3 className="text-lg font-bold text-primary mt-3">{tech.name}</h3>
+        <p className="text-xs text-muted mt-1.5 leading-relaxed line-clamp-2">
           {tech.description}
         </p>
 
@@ -55,8 +55,8 @@ function TechCard({ tech, addToStack, isAdded }: TechCardProps) {
         }}
         className={`mt-5 w-full py-2.5 px-4 text-sm font-medium rounded-xl transition flex items-center justify-center gap-2 cursor-pointer ${
           isAdded
-            ? "bg-[#D61E7F] text-white opacity-90"
-            : "bg-[#0F172A] hover:bg-black text-white"
+            ? "bg-secondary text-white opacity-90"
+            : "bg-primary hover:bg-black text-white"
         }`}
         disabled={isAdded}
       >

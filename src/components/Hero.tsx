@@ -4,7 +4,7 @@ function Hero() {
     <section className="container mx-auto pt-10">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="flex flex-col items-center md:items-start gap-5">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl text-center md:text-left font-extrabold text-[#0F172A]">
+          <h1 className="text-4xl lg:text-5xl xl:text-6xl text-center md:text-left font-extrabold text-primary">
             Build Your Ideal <br />
             <span className="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-brand-gradient">
               Development Stack
@@ -19,7 +19,7 @@ function Hero() {
             <button className="flex-1 btn sm:btn-md md:btn-md max-w-50 h-10 bg-brand-gradient text-white text-[12px] lg:text-[14px] font-normal sm:font-semibold">
               Explore Technologies
             </button>
-            <button className="flex-1 btn btn-outline border-[#E5E7EB] sm:btn-md md:btn-md max-w-50 text-[12px] lg:text-[14px] font-normal sm:font-semibold  bg-white text-[#374151] ">
+            <button className="flex-1 btn btn-outline border-[#E5E7EB] sm:btn-md md:btn-md max-w-50 text-[12px] lg:text-[14px] font-normal sm:font-semibold  bg-white text-primary ">
               Learn More
             </button>
           </div>

@@ -21,11 +21,11 @@ function SelectedTechnologies({
 }) {
   return (
     <div className="w-full sm:max-w-70 lg:max-w-80 rounded-3xl bg-white font-jakarta p-4 md:p-6 mt-5 sm:mt-0 shadow-sm sm:shadow-none">
-      <h2 className="text-2xl font-bold text-slate-900">Your Stack</h2>
+      <h2 className="text-2xl font-bold text-primary">Your Stack</h2>
 
       {selectedTechnologies.length > 0 ? (
         <>
-          <p className="mt-2 text-lg text-slate-400">
+          <p className="mt-2 text-lg text-muted">
             {selectedTechnologies.length} Technology Selected
           </p>
 
@@ -51,11 +51,11 @@ function SelectedTechnologies({
         </>
       ) : (
         <>
-          <p className="mt-2 text-lg text-slate-400">
+          <p className="mt-2 text-lg text-muted">
             No technologies selected yet.
           </p>
 
-          <div className="mt-6 flex h-28 text-slate-400 items-center justify-center rounded-2xl shadow-sm">
+          <div className="mt-6 flex h-28 text-muted items-center justify-center rounded-2xl shadow-sm">
             Your stack is empty.
           </div>
         </>

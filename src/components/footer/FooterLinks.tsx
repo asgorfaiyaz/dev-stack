@@ -2,8 +2,8 @@ function FooterLinks() {
   return (
     <section className="hidden flex-1 md:grid grid-cols-3 gap-10 text-[12px]">
       <div className="">
-        <h1 className="font-jakarta font-bold">Product</h1>
-        <ul className="text-[#94A3B8] flex flex-col gap-2 pt-5">
+        <h1 className="font-jakarta text-primary font-bold">Product</h1>
+        <ul className="text-muted flex flex-col gap-2 pt-5">
           <li>
             <a href="#">Home</a>
           </li>
@@ -16,8 +16,8 @@ function FooterLinks() {
         </ul>
       </div>
       <div className="">
-        <h1 className="font-jakarta font-bold">Company</h1>
-        <ul className="text-[#94A3B8] flex flex-col gap-2 pt-5">
+        <h1 className="font-jakarta font-bold text-primary">Company</h1>
+        <ul className="text-muted flex flex-col gap-2 pt-5">
           <li>
             <a href="#">About</a>
           </li>
@@ -30,8 +30,8 @@ function FooterLinks() {
         </ul>
       </div>
       <div className="">
-        <h1 className="font-jakarta font-bold">Legal</h1>
-        <ul className="text-[#94A3B8] flex flex-col gap-1 pt-5">
+        <h1 className="font-jakarta font-bold text-primary">Legal</h1>
+        <ul className="text-muted flex flex-col gap-1 pt-5">
           <li>
             <a href="#">Privacy Policy</a>
           </li>

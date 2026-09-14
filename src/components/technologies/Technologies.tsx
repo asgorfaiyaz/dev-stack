@@ -17,12 +17,12 @@ function Technologies({
   console.log("rendered");
 
   return (
-    <section className="container mx-auto py-10">
-      <h1 className="text-4xl font-extrabold text-secondary">
+    <section id="technologies" className="container mx-auto py-10">
+      <h1 className="text-4xl font-extrabold text-primary">
         Explore the
         <span className="text-brand-gradient"> Technologies</span>
       </h1>
-      <p className="font-jakarta pt-2 text-[#64748B]">
+      <p className="font-jakarta pt-2 text-muted">
         Pick one technology per category to build your ideal stack.
       </p>
 
