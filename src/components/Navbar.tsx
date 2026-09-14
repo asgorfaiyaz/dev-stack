@@ -15,7 +15,9 @@ function Navbar() {
 
           <ul className="hidden md:flex justify-center items-center gap-5 lg:gap-8 ">
             <li>
-              <a href="/">Home</a>
+              <a className="text-secondary" href="/">
+                Home
+              </a>
             </li>
             <li>
               <a href="#technologies">Technologies</a>
@@ -35,7 +37,7 @@ function Navbar() {
             <button className="btn btn-sm sm:btn-md btn-ghost text-[9px] sm:text-[14px]">
               Sign in
             </button>
-            <button className="btn btn-sm sm:btn-md btn-secondary text-[9px] sm:text-[14px] rounded-4xl text-white font-semibold">
+            <button className="btn btn-sm sm:btn-md bg-brand-gradient text-[9px] sm:text-[14px] rounded-4xl text-white font-semibold">
               Sign Up
             </button>
           </div>

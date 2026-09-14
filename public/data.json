@@ -9,36 +9,7 @@
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
   },
-  {
-    "id": "vue",
-    "name": "Vue.js",
-    "category": "Frontend",
-    "description": "A progressive JavaScript framework for building flexible and performant web interfaces.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Vue.js.svg",
-    "rating": 4.8,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Easy Start"
-  },
-  {
-    "id": "angular",
-    "name": "Angular",
-    "category": "Frontend",
-    "description": "A full-featured TypeScript framework for building scalable web applications.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Angular.svg",
-    "rating": 4.7,
-    "difficulty": "Intermediate",
-    "badge": "Enterprise"
-  },
-  {
-    "id": "svelte",
-    "name": "Svelte",
-    "category": "Frontend",
-    "description": "A compiler-based JavaScript framework that creates highly optimized web applications.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Svelte.svg",
-    "rating": 4.8,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Fast"
-  },
+
   {
     "id": "nextjs",
     "name": "Next.js",
@@ -48,26 +19,6 @@
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Full Stack"
-  },
-  {
-    "id": "astro",
-    "name": "Astro",
-    "category": "Frontend",
-    "description": "A modern web framework optimized for content-driven websites and minimal JavaScript.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Astro.svg",
-    "rating": 4.8,
-    "difficulty": "Intermediate",
-    "badge": "Modern"
-  },
-  {
-    "id": "jquery",
-    "name": "jQuery",
-    "category": "Frontend",
-    "description": "A lightweight JavaScript library that simplifies DOM manipulation and browser scripting.",
-    "icon": "https://icon.icepanel.io/Technology/svg/jQuery.svg",
-    "rating": 4.4,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Classic"
   },
   {
     "id": "redux",
@@ -148,36 +99,6 @@
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Fast"
-  },
-  {
-    "id": "spring",
-    "name": "Spring",
-    "category": "Backend",
-    "description": "A comprehensive Java framework for building enterprise-grade backend applications.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Spring.svg",
-    "rating": 4.7,
-    "difficulty": "Advanced",
-    "badge": "Enterprise"
-  },
-  {
-    "id": "graphql",
-    "name": "GraphQL",
-    "category": "Backend",
-    "description": "A query language and runtime for APIs that lets clients request exactly the data they need.",
-    "icon": "https://icon.icepanel.io/Technology/svg/GraphQL.svg",
-    "rating": 4.8,
-    "difficulty": "Intermediate",
-    "badge": "API"
-  },
-  {
-    "id": "wordpress",
-    "name": "WordPress",
-    "category": "Backend",
-    "description": "A popular open-source content management system used to build websites and web applications.",
-    "icon": "https://icon.icepanel.io/Technology/svg/WordPress.svg",
-    "rating": 4.8,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
   },
   {
     "id": "javascript",
